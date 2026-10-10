@@ -1,0 +1,11 @@
+{
+  "targetUrl": "http://localhost:8080",
+  "mode": "get",
+  "threads": 10,
+  "requestsPerSecond": 50,
+  "durationSeconds": 60,
+  "requestTimeoutMs": 5000,
+  "page": "/",
+  "postFile": "nil",
+  "useTls": false
+}

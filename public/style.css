@@ -1,0 +1,12 @@
+# ১. Go ইনস্টল করা থাকতে হবে (>= 1.20)
+go version
+
+# ২. Node deps ইনস্টল
+npm install
+
+# ৩. config.json-এ আপনার নিজের target দিন
+#    উদাহরণ: "targetUrl": "http://localhost:8080"
+
+# ৪. সার্ভার চালু
+npm start
+# → http://localhost:3000

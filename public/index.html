@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vexu Monitor — Live Pentest Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+<div class="container">
+
+    <header>
+        <div class="brand">
+            <div class="logo">V</div>
+            <div>
+                <h1>Vexu Monitor</h1>
+                <p class="subtitle">Live Authorized Pentest Dashboard</p>
+            </div>
+        </div>
+        <div class="status-pill" id="statusPill">
+            <span class="dot"></span>
+            <span id="statusText">Connecting...</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-label">ACTIVE TARGET</div>
+        <div class="hero-url" id="targetUrl">—</div>
+        <div class="hero-cycle">
+            Auto-cycle every <span id="cycleVal">60</span>s
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card">
+            <div class="stat-icon">⏱</div>
+            <div class="stat-label">Uptime</div>
+            <div class="stat-value" id="uptimeVal">0s</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">📡</div>
+            <div class="stat-label">Requests Sent</div>
+            <div class="stat-value" id="reqVal">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">⚡</div>
+            <div class="stat-label">Requests / Sec</div>
+            <div class="stat-value" id="rpsVal">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">🔄</div>
+            <div class="stat-label">Cycle Restarts</div>
+            <div class="stat-value" id="restartVal">0</div>
+        </div>
+        <div class="stat-card error">
+            <div class="stat-icon">⚠</div>
+            <div class="stat-label">Errors</div>
+            <div class="stat-value" id="errVal">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">🎯</div>
+            <div class="stat-label">Status</div>
+            <div class="stat-value" id="runVal">—</div>
+        </div>
+    </section>
+
+    <section class="log-section">
+        <div class="log-header">
+            <h2>Live Activity</h2>
+            <span class="pulse"></span>
+        </div>
+        <div id="log" class="log"></div>
+    </section>
+
+    <footer>
+        <div class="credit">
+            <span class="credit-label">Built &amp; Maintained by</span>
+            <span class="credit-name">Entity Vexu</span>
+        </div>
+        <div class="contact">
+            <span class="credit-label">Contact</span>
+            <a href="https://t.me/UsAdminChat_bot" target="_blank" rel="noopener">@UsAdminChat_bot</a>
+        </div>
+        <p class="disclaimer">
+            For authorized penetration testing only. Unauthorized use is illegal.
+        </p>
+    </footer>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

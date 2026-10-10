@@ -1,0 +1,18 @@
+{
+  "name": "vexu-dashboard",
+  "version": "2.0.0",
+  "description": "Entity Vexu - Authorized Load Test Live Monitor",
+  "main": "server.js",
+  "author": "Entity Vexu",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
